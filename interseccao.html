@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let lista1 = [1.2, 3.5, 7, 10.0, 15];
+        let lista2 = [2, 3.5, 7, 11, 15.0];
+
+        let intersecao = [];
+
+        for (let elemento1 of lista1) {
+            for (let elemento2 of lista2) {
+                if (parseFloat(elemento1) === parseFloat(elemento2)) {
+                    intersecao.push(elemento1);
+                }
+            }
+        }
+        alert("Interseção: " + intersecao);
+    </script>
+</body>
+</html>
